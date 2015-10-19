@@ -29,7 +29,16 @@ public class FunFactsActivity extends Activity {
                 //Randomly select a fact
                 Random randomGenerator = new Random(); // Construct a new Random number genereator
                 int randomNumber = randomGenerator.nextInt(3);
-                fact =  randomNumber + "";
+                /* convert the RandomNumber to a text fact
+                *0 = Ants stretch when they wake up in the morning.
+                *1 = Ostriches can run faster than horses.
+                *2 = Olympic gold medals are actually  made mostly of silver
+                 */
+                //if random Number equals to zero then
+                if(randomNumber==0){
+                    // set fact equals to ant fact
+                    fact = "Ants stretch when they wake up in the morning.";
+                }
                 //Update the label with our dynamic fact
                 factLabel.setText(fact);
             }
