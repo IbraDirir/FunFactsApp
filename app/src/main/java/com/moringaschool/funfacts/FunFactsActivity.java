@@ -23,17 +23,16 @@ public class FunFactsActivity extends Activity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fun_facts);
-    // declare our view variable and assign them the views from the layout files
+    // Declare our view variable and assign them the views from the layout files
         final TextView factLabel = (TextView) findViewById(R.id.factTextView);
         Button showFactButton = (Button) findViewById(R.id.showFactButton);
-        final RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.relativeLayout);
-        View.OnClickListener listener = new View.OnClickListener() {
+        View.OnClickListener listener  = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String fact = mFactBoook.getFact();
+
              //Update the label with our dynamic fact
-                factLabel.setText(fact);
-                relativeLayout.setBackgroundColor(Color.RED);
+                factLabel.setText("");
+
 
             }
         };
