@@ -17,8 +17,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView"
         android:textSize="24sp"
-        android:textColor="@android:color/holo_red_dark"
-        android:background="#0464fffa" />
+        android:textColor="#80ffffff" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -39,7 +38,8 @@
         android:id="@+id/showFactButton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="@android:color/white" />
+        android:background="@android:color/white"
+        android:textColor="#ff51b46d" />
 
     <TextView
         android:layout_width="wrap_content"
